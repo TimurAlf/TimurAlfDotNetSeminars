@@ -3,40 +3,31 @@
 7 -> да
 1 -> нет
 */
+
 void Weekend()
 {
     int x = Convert.ToInt32(Console.ReadLine());
-    if (x == 1)
+    if (x <= 5)
     {
-        Console.WriteLine("нет");
+        if (x < 1)
+        {
+            Console.WriteLine("Дней недели всего 7 :)");
+        }
+        else
+        {
+            Console.WriteLine("нет");
+        }
     }
-    if (x == 2)
+    else
     {
-        Console.WriteLine("Нет");
-    }
-    if (x == 3)
-    {
-        Console.WriteLine("Нет!");
-    }
-    if (x == 4)
-    {
-        Console.WriteLine("Нет");
-    }
-    if (x == 5)
-    {
-        Console.WriteLine("Нет");
-    }
-    if (x == 6)
-    {
-        Console.WriteLine("Выходной");
-    }
-    if (x == 7)
-    {
-        Console.WriteLine("Выходной");
-    }
-    if (x > 7)
-    {
-        Console.WriteLine("Дней недели всего 7 :)");
+        if (x > 7)
+        {
+            Console.WriteLine("Дней недели всего 7 :)");
+        }
+        else
+        {
+            Console.WriteLine("Выходной");
+        }
     }
 }
 Weekend();
