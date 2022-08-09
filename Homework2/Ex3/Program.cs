@@ -8,7 +8,7 @@ void Weekend()
     int x = Convert.ToInt32(Console.ReadLine());
     if (x == 1)
     {
-        Console.WriteLine("Выходной");
+        Console.WriteLine("нет");
     }
     if (x == 2)
     {
@@ -28,7 +28,7 @@ void Weekend()
     }
     if (x == 6)
     {
-        Console.WriteLine("Нет");
+        Console.WriteLine("Выходной");
     }
     if (x == 7)
     {
