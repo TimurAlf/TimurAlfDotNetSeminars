@@ -3,7 +3,8 @@
 //14 -> нет
 //46 -> нет
 //161 -> да
-
+void Mod()
+{
 int a = 161;
 int b = 7, c = 23;
 if (a % b == 0)
@@ -20,4 +21,7 @@ if (a % b == 0)
 else
 {
     Console.WriteLine("нет");
+}   
 }
+Mod();
+
