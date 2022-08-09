@@ -6,12 +6,12 @@
 
 void Show()
 {
-int show = new Random().Next(100, 1000);
-int a = show/10;
-int b = a%10;
+    int show = new Random().Next(100, 1000);
+    int a = show / 10;
+    int b = a % 10;
 
-Console.WriteLine(show);
-Console.Write(b);   
+    Console.WriteLine(show);
+    Console.Write(b);
 }
 Show();
 
