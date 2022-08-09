@@ -4,12 +4,12 @@
 8 -> 2, 4, 6, */
 
 //int N=5;
-int N=8;
-int S=0;
-while(S<N)
+int N = 8;
+int S = 0;
+while (S < N)
 {
-    S+=2;
-    Console.WriteLine($"Число = {S}");    
+    S += 2;
+    Console.WriteLine($"Число = {S}");
 }
- 
+
 
