@@ -8,8 +8,8 @@
 // d= ((x2-x1)^2 + (y2-y1)^2+ (z2-z1)^2)^1\2
 
 (int x, int y, int z) A, B;
-A = (3, 6, 8);
-B = (2, 1, -7);
+A = (7, -5, 0);
+B = (1, -1, 9);
 System.Console.WriteLine("Координата точки A(" + A.x + "," + A.y + "," + A.z + ")");
 System.Console.WriteLine("Координата точки B(" + B.x + "," + B.y + "," + B.z + ")");
 System.Console.Write("Расстояние между точками А и В в 3D пространстве равно: ");
