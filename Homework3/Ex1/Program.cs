@@ -8,8 +8,3 @@ int a = Num % 100;
 int b = Num / 1000;
 if(a==b) System.Console.WriteLine("Число " +Num+ " является палиндромом. ");
 else System.Console.WriteLine("Число " +Num+ " не является палиндромом. ");
-
-
-
-
-
