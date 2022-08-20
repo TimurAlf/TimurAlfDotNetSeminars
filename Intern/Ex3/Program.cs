@@ -1,20 +1,19 @@
-﻿// 2. Даны два числа. Показать большее и меньшее число
+﻿// 3. По заданному номеру дня недели вывести его название
 
-Console.Write("Введите 1 число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите 2 число: ");
-int b = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите номер дня недели: ");
+int num = Convert.ToInt32(Console.ReadLine());
+Week(num);
 
-Сomparison(a, b);
-
-static void Сomparison(int a, int b)
+void Week(int num)
 {
-    if (a > b)
-    {
-        System.Console.WriteLine($"{a} > {b}");
-    }
-    else
-    {
-        System.Console.WriteLine($"{a} < {b}");
-    }
+    if (num <= 0) System.Console.WriteLine("Дней недели всего 7");
+    if (num == 1) System.Console.WriteLine("Пн");
+    if (num == 2) System.Console.WriteLine("Вт");
+    if (num == 3) System.Console.WriteLine("Ср");
+    if (num == 4) System.Console.WriteLine("Чт");
+    if (num == 5) System.Console.WriteLine("Пт");
+    if (num == 6) System.Console.WriteLine("Сб");
+    if (num == 7) System.Console.WriteLine("Вс");
+    if (num > 7) System.Console.WriteLine("Дней недели всего 7");
 }
+
