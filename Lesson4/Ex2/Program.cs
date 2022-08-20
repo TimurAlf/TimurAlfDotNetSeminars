@@ -81,7 +81,7 @@ int [] DecToP (int dec, int p)
 
 //Клиентский код
  int[] res = GetBinaryArray(4);
-//Print(res);
+Print(res);
 
 string s = NewPrint(res);
 System.Console.WriteLine($"s: {s}");
