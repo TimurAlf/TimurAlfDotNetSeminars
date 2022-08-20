@@ -1,13 +1,21 @@
-﻿//  Почувствуй себя интерном*
-//  0. Вывести квадрат числа
+﻿// 1. По двум заданным числам проверять является ли первое квадратом второго
 
-Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите 1 число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите 2 число: ");
+int b = Convert.ToInt32(Console.ReadLine());
 
-NewMethod(num);
 
-void NewMethod(int num)
+Condition();
+
+void Condition()
 {
-    int result = num * num;
-    System.Console.WriteLine($"{num} * {num} = {result}");
+    if (b * b == a)
+    {
+        System.Console.WriteLine($"Число {a} является квадратом числа {b}.");
+    }
+    else
+    {
+        System.Console.WriteLine($"Число {a} не является квадратом числа {b}.");
+    }
 }
