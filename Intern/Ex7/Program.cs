@@ -9,6 +9,6 @@ void Show(int x)
 {
     for (int i = -x; i <= x; i++)
     {
-        Console.Write("{0}, ", string.Join(", ", i));
+        Console.Write($"{i,3}");
     }
 }
