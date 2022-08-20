@@ -9,17 +9,17 @@ int num = Convert.ToInt32(Console.ReadLine());
 
   int SumNumber(int num)
   {
-    int counter = Convert.ToString(num).Length;
-    int advance = 0;
-    int result = 0;
+    int count = Convert.ToString(num).Length;
+    int prior = 0;
+    int res = 0;
 
-    for (int i = 0; i < counter; i++)
+    for (int i = 0; i < count; i++)
     {
-      advance = num - num % 10;
-      result = result + (num - advance);
+      prior = num - num % 10;
+      res = res + (num - prior);
       num = num / 10;
     }
-   return result;
+   return res;
   }
 
 int sum = SumNumber(num);
