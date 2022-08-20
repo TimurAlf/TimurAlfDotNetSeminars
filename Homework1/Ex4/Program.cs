@@ -4,12 +4,17 @@
 8 -> 2, 4, 6, */
 
 //int N=5;
-int N = 8;
-int S = 0;
-while (S < N)
-{
-    S += 2;
-    Console.WriteLine($"Число = {S}");
-}
+int n = 8;
 
+NewMethod(n);
+
+void NewMethod(int n)
+{
+    int sum = 0;
+    while (sum < n)
+    {
+        sum += 2;
+        Console.WriteLine($"Число = {sum}");
+    }
+}
 
