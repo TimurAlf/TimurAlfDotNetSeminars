@@ -3,7 +3,12 @@
 // например -3 = 9
 // например -7 = 49
 
-int value = 10;
-int result = value * value;
-Console.WriteLine($"result: {result}");
+int num = new Random().Next(-10, 10);
+System.Console.Write(num + " * " + num +" = ");
+int result = NewMethod(num);
+Console.Write($"{result}");
 
+int NewMethod(int num)
+{
+    return num * num;
+}
