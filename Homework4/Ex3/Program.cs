@@ -23,7 +23,7 @@ string NewPrint(int[] arr) //метод, принимает массив и ку
     }
     return s;
 }
-int[] res = GetBinaryArray(8);
-string s = NewPrint(res);
+int[] array = GetBinaryArray(8);
+string s = NewPrint(array);
 //System.Console.WriteLine("["+ res[0] + "," + res[1] + "," + res[2] + "," + res[3] + "," + res[4] + "," + res[5] + "," + res[6] + "," + res[7]+"]");
-Console.WriteLine("[{0}]", string.Join(", ", res));
+Console.WriteLine("[{0}]", string.Join(", ", array));
