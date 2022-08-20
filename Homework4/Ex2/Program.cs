@@ -7,20 +7,20 @@
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-  int SumNumber(int num)
-  {
+int SumNumber(int num)
+{
     int count = Convert.ToString(num).Length;
     int prior = 0;
     int res = 0;
 
     for (int i = 0; i < count; i++)
     {
-      prior = num - num % 10;
-      res = res + (num - prior);
-      num = num / 10;
+        prior = num - num % 10;
+        res = res + (num - prior);
+        num = num / 10;
     }
-   return res;
-  }
+    return res;
+}
 
 int sum = SumNumber(num);
 Console.WriteLine("Сумма цифр в числе: " + sum);
