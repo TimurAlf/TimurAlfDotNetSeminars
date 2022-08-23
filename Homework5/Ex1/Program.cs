@@ -12,16 +12,16 @@ int[] GetBinaryArray(int n)
     return arr;
 }
 
-string NewPrint(int[] arr)
-{
-    string s = String.Empty;
-    int size = arr.Length;
-    for (int i = 0; i < size; i++)
-    {
-        s += Convert.ToString(arr[i]);
-    }
-    return s;
-}
+// string NewPrint(int[] arr)
+// {
+//     string s = String.Empty;
+//     int size = arr.Length;
+//     for (int i = 0; i < size; i++)
+//     {
+//         s += Convert.ToString(arr[i]);
+//     }
+//     return s;
+// }
 
 int Check(int[] arr)
 {
@@ -34,7 +34,7 @@ int Check(int[] arr)
     return count;
 }
 int[] array = GetBinaryArray(8);
-string s = NewPrint(array);
+//string s = NewPrint(array);
 int count = Check(array);
 Console.Write("[{0}]", string.Join(", ", array));
-Console.Write($"-> {count}");
+Console.Write($" -> {count}");
