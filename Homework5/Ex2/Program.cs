@@ -13,16 +13,16 @@ int[] GetBinaryArray(int n)
     return arr;
 }
 
-// string NewPrint(int[] arr)
-// {
-//     string s = String.Empty;
-//     int size = arr.Length;
-//     for (int i = 0; i < size; i++)
-//     {
-//         s += Convert.ToString(arr[i]);
-//     }
-//     return s;
-// }
+string NewPrint(int[] arr)
+{
+    string s = String.Empty;
+    int size = arr.Length;
+    for (int i = 0; i < size; i++)
+    {
+        s += Convert.ToString(arr[i]+", ");
+    }
+    return s;
+}
 
 int Sum(int[] arr)
 {
@@ -36,7 +36,8 @@ int Sum(int[] arr)
 }
 
 int[] array = GetBinaryArray(8);
-//string s = NewPrint(array);
+string s = NewPrint(array);
 int sum = Sum(array);
-Console.Write("[{0}]", string.Join(", ", array));
+//Console.Write("[{0}]", string.Join(", ", array));
+System.Console.Write(s);
 Console.Write($"-> {sum}");
