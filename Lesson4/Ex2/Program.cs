@@ -19,7 +19,7 @@ void Print(int[] arr) // метод завязан на консоли, если
     int size = arr.Length;
     for (int i = 0; i < size; i++)
     {
-        System.Console.Write(arr[i]); //выводим массив
+        System.Console.WriteLine(arr[i]); //выводим массив
     }
 }
 
