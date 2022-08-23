@@ -18,7 +18,7 @@ string NewPrint(double[] arr)
     double size = arr.Length;
     for (int i = 0; i < size; i++)
     {
-        s += Convert.ToString(arr[i]);
+        s += Convert.ToString(arr[i]+", ");
     }
     return s;
 }
@@ -56,6 +56,7 @@ string s = NewPrint(array);
 double min = Min(array);
 double max = Max(array);
 double result = max-min;
-Console.Write("[{0}]", string.Join(", ", array));
+//Console.Write("[{0}]", string.Join(", ", array));
+System.Console.WriteLine(s);
 Console.Write($" {max} - {min} = {result}");
 
