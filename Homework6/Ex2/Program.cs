@@ -14,8 +14,9 @@ System.Console.WriteLine($"y = {k1}x + {b1}");
 System.Console.WriteLine($"y = {k2}x + {b2}");
 
 double x,y;
-y=k1*(b2-b1)/k1-k2 +b1;
-x=b2-b1/k1-k2;
+y=(k2*(b2-b1) - b2*(k2-k1))/(k2-k1);
+x=(b2-b1)/(k1-k2);
+
 System.Console.WriteLine($"Координата точки пересечения прямых : ({x}; {y})");
 
 
