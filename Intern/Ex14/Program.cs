@@ -6,8 +6,8 @@ int EnterNum()
     int num = Convert.ToInt32(Console.ReadLine());
     return num;
 }
-
-
+// До num = 9999
+int num = EnterNum();
 if (num > 100 && num < 1000)
 {
     int thirdNum = num % 10;
