@@ -13,17 +13,22 @@ int[,] array = new int[,]
 {8, 4, 2, 4},
 };
 
-int n = array.GetLength(0), m = array.GetLength(1);
+GetArithmeticMean(array);
 
-Console.WriteLine($"Cреднее арифметическое:");
-for (int i = 0; i < m; i++)
+void GetArithmeticMean(int[,] array)
 {
-  double arithmeticMean = 0;
-  for (int j = 0; j < n; j++)
-  {
-    arithmeticMean = arithmeticMean + array[j, i];
-  }
-  arithmeticMean = Math.Round(arithmeticMean / n, 1);
-  Console.WriteLine($"{i+1} столбца => {arithmeticMean}");
+    int n = array.GetLength(0), m = array.GetLength(1);
+
+    Console.WriteLine($"Cреднее арифметическое:");
+    for (int i = 0; i < m; i++)
+    {
+        double arithmeticMean = 0;
+        for (int j = 0; j < n; j++)
+        {
+            arithmeticMean = arithmeticMean + array[j, i];
+        }
+        arithmeticMean = Math.Round(arithmeticMean / n, 1);
+        Console.WriteLine($"{i + 1} столбца => {arithmeticMean}");
+    }
 }
 
