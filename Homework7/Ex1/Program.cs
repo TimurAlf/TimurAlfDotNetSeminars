@@ -13,7 +13,7 @@ double[,] GetArray(int n, int m)
     {
         for (int j = 0; j < m; j++)
         {
-            arr[i, j] = new Random().NextDouble() * (100 - 0) + 0;
+            arr[i, j] = new Random().NextDouble() * 20 - 10;
         }
     }
     return arr;
@@ -27,7 +27,8 @@ void PrintArray(double[,] arr)
     {
         for (int col = 0; col < cols; col++)
         {
-            System.Console.Write($"{arr[row, col], 3}");
+            double alignNumber = Math.Round(arr[row, col], 1);
+            Console.Write(alignNumber + " ");
         }
         System.Console.WriteLine();
     }
