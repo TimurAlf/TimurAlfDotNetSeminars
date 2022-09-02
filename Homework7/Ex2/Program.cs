@@ -17,17 +17,22 @@ System.Console.WriteLine("Введите позицию элемента в ма
 int n = Convert.ToInt32(Console.ReadLine());
 int m = Convert.ToInt32(Console.ReadLine());
 
-int rows = array.GetLength(0), cols = array.GetLength(1);
+SearchPosition(array, n, m);
 
-for (int i = 0; i < rows; i++)
+void SearchPosition(int[,] array, int n, int m)
 {
-    for (int j = 0; j < cols; j++)
+    int rows = array.GetLength(0), cols = array.GetLength(1);
+
+    for (int i = 0; i < rows; i++)
     {
-        if (i == n && j == m) System.Console.WriteLine($"({n},{m}) элемент -> {array[i, j]}");
+        for (int j = 0; j < cols; j++)
+        {
+            if (i == n && j == m) System.Console.WriteLine($"({n},{m}) элемент -> {array[i, j]}");
+        }
+    }
+
+    if (n > rows && n < cols && m > cols && m < cols)
+    {
+        System.Console.WriteLine($"({n},{m}) -> такого элемента нет");
     }
 }
-
-if (n > rows || n < cols || m > cols || m < cols) 
-        {
-            System.Console.WriteLine($"({n},{m}) -> такого элемента нет");
-        }
